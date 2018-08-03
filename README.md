@@ -1,1 +1,1 @@
-# DesignPatternsExercisesded
+# DesignPatternsExercise
