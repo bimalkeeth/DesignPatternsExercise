@@ -28,8 +28,14 @@ func (t *UserList) FindUser(id int32) (User, error) {
 
 func (u *UserListProxy) addUserToStack(user User) {
 	if len(u.StackCache) >= u.StackSize {
+		u.StackCache = append(u.StackCache[1:], user)
+	} else {
 
 	}
+
+}
+
+func (t *UserList) addUser(newUser User) {
 
 }
 
